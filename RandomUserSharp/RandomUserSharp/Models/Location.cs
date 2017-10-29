@@ -5,7 +5,7 @@ namespace RandomUserSharp.Models
     public class Location
     {
         [JsonProperty("postcode")]
-        public long Postcode { get; set; }
+        public string Postcode { get; set; }
 
         [JsonProperty("city")]
         public string City { get; set; }
