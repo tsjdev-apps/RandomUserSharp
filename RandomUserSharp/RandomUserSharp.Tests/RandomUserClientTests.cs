@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace RandomUserSharp.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class RandomUserClientTests
     {
         [TestMethod]
         public void TestMethod1()
