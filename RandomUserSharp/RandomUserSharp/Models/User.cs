@@ -15,7 +15,6 @@ namespace RandomUserSharp.Models
         public Name Name { get; set; }
 
         [JsonProperty("dob")]
-        [JsonConverter(typeof(UnixDateTimeConverter))]
         public DateTime DateOfBirth { get; set; }
 
         [JsonProperty("cell")]
@@ -44,7 +43,6 @@ namespace RandomUserSharp.Models
         public PictureInfo PictureInfo { get; set; }
 
         [JsonProperty("registered")]
-        [JsonConverter(typeof(UnixDateTimeConverter))]
         public DateTime Registered { get; set; }
     }
 }
