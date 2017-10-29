@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Thomas Sebastian Jensen</Authors>
+    <PackageLicenseUrl>https://github.com/tsjdev-apps/RandomUserSharp/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/tsjdev-apps/RandomUserSharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tsjdev-apps/RandomUserSharp</RepositoryUrl>
+    <PackageTags>RandomUser Api Mock Wrapper free</PackageTags>
+    <Copyright>© Thomas Sebastian Jensen | 2017</Copyright>
+    <Description>An unofficial .NET API wrapper for RandomUser.me</Description>
+    <Company>tsjdev-apps.de</Company>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
