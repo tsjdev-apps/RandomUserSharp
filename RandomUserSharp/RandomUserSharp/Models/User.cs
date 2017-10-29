@@ -1,17 +1,22 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using RandomUserSharp.Utils;
 
 namespace RandomUserSharp.Models
 {
     public class User
     {
         [JsonProperty("gender")]
-        public string Gender { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public Gender Gender { get; set; }
 
         [JsonProperty("name")]
         public Name Name { get; set; }
 
         [JsonProperty("dob")]
-        public string Dob { get; set; }
+        [JsonConverter(typeof(UnixDateTimeConverter))]
+        public DateTime DateOfBirth { get; set; }
 
         [JsonProperty("cell")]
         public string Cell { get; set; }
@@ -32,12 +37,13 @@ namespace RandomUserSharp.Models
         public string Phone { get; set; }
 
         [JsonProperty("nat")]
-        public string Nat { get; set; }
+        public string Nationality { get; set; }
 
         [JsonProperty("picture")]
-        public Picture Picture { get; set; }
+        public PictureInfo PictureInfo { get; set; }
 
         [JsonProperty("registered")]
-        public string Registered { get; set; }
+        [JsonConverter(typeof(UnixDateTimeConverter))]
+        public DateTime Registered { get; set; }
     }
 }
