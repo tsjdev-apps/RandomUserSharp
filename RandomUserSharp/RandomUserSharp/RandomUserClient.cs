@@ -18,12 +18,6 @@ namespace RandomUserSharp
             _httpClient = new HttpClient { BaseAddress = new Uri("http://api.randomuser.me/1.1") };
         }
 
-        public async Task<User> GetSingleRandomUserAsync(Gender gender = Gender.Both, List<Nationality> natioanlities = null, bool useLegoImages = false, string seed = null)
-        {
-            var options = new RequestOptions { Gender = gender, Seed = seed, UseLegoImages = useLegoImages, Nationalities = natioanlities };
-            return await GetRandomUsersAsync(options).ContinueWith(r => r.Result.FirstOrDefault());
-        }
-
         public async Task<List<User>> GetRandomUsersAsync(int count, Gender gender = Gender.Both, List<Nationality> natioanlitites = null, bool useLegoImages = false, string seed = null)
         {
             var options = new RequestOptions { Count = count, Gender = gender, Seed = seed, UseLegoImages = useLegoImages, Nationalities = natioanlitites };
