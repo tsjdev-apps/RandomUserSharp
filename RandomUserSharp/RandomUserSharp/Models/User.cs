@@ -37,7 +37,8 @@ namespace RandomUserSharp.Models
         public string Phone { get; set; }
 
         [JsonProperty("nat")]
-        public string Nationality { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public Nationality Nationality { get; set; }
 
         [JsonProperty("picture")]
         public PictureInfo PictureInfo { get; set; }
