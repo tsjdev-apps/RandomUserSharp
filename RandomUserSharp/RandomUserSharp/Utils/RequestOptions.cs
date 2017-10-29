@@ -4,7 +4,7 @@ using RandomUserSharp.Models;
 
 namespace RandomUserSharp.Utils
 {
-    public class RequestOptions
+    internal class RequestOptions
     {
         public int Count { get; set; }
         public Gender Gender { get; set; }

@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace RandomUserSharp.Utils
 {
-    public class UriConverter : JsonConverter
+    internal class UriConverter : JsonConverter
     {
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
