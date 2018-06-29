@@ -15,6 +15,7 @@
         GB,
         IE,
         IR,
+        NO,
         NL,
         NZ,
         TR,

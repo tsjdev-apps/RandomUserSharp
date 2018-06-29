@@ -15,7 +15,7 @@ namespace RandomUserSharp.Models
         public Name Name { get; set; }
 
         [JsonProperty("dob")]
-        public DateTime DateOfBirth { get; set; }
+        public AgeInfo DateOfBirth { get; set; }
 
         [JsonProperty("cell")]
         public string Cell { get; set; }
@@ -43,6 +43,6 @@ namespace RandomUserSharp.Models
         public PictureInfo PictureInfo { get; set; }
 
         [JsonProperty("registered")]
-        public DateTime Registered { get; set; }
+        public AgeInfo Registered { get; set; }
     }
 }
