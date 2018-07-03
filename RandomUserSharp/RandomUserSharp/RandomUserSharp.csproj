@@ -8,14 +8,15 @@
     <PackageProjectUrl>https://github.com/tsjdev-apps/RandomUserSharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/tsjdev-apps/RandomUserSharp</RepositoryUrl>
     <PackageTags>RandomUser Api Mock Wrapper free</PackageTags>
-    <Copyright>© Thomas Sebastian Jensen | 2017</Copyright>
+    <Copyright>© Thomas Sebastian Jensen | 2017-2018</Copyright>
     <Description>An unofficial .NET API wrapper for RandomUser.me</Description>
     <Company>tsjdev-apps.de</Company>
     <NeutralLanguage>en</NeutralLanguage>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 
 </Project>
