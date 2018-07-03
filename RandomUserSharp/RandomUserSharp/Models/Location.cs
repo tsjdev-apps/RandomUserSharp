@@ -15,5 +15,11 @@ namespace RandomUserSharp.Models
 
         [JsonProperty("street")]
         public string Street { get; set; }
+
+        [JsonProperty("coordinates")]
+        public Coordinates Coordinates { get; set; }
+        
+        [JsonProperty("timezonme")]
+        public Timezone Timezone { get; set; }
     }
 }

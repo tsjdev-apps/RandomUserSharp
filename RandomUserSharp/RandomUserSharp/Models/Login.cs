@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace RandomUserSharp.Models
 {
@@ -21,5 +22,8 @@ namespace RandomUserSharp.Models
 
         [JsonProperty("username")]
         public string Username { get; set; }
+
+        [JsonProperty("uuid")]
+        public Guid Uuid { get; set; }
     }
 }
