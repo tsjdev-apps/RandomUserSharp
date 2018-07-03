@@ -19,7 +19,7 @@ namespace RandomUserSharp.Models
         [JsonProperty("coordinates")]
         public Coordinates Coordinates { get; set; }
         
-        [JsonProperty("timezonme")]
+        [JsonProperty("timezone")]
         public Timezone Timezone { get; set; }
     }
 }
