@@ -15,7 +15,7 @@ namespace RandomUserSharp
 
         public RandomUserClient()
         {
-            _httpClient = new HttpClient { BaseAddress = new Uri("http://api.randomuser.me/1.1") };
+            _httpClient = new HttpClient { BaseAddress = new Uri("http://api.randomuser.me/1.2") };
         }
 
         public async Task<List<User>> GetRandomUsersAsync(int count, Gender gender = Gender.Both, List<Nationality> natioanlitites = null, bool useLegoImages = false, string seed = null)
