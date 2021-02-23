@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -14,15 +14,15 @@ namespace RandomUserSharp
 
         public RandomUserClient()
         {
-            _httpClient = new HttpClient { BaseAddress = new Uri("http://api.randomuser.me/1.2") };
+            _httpClient = new HttpClient { BaseAddress = new Uri("https://api.randomuser.me/1.3") };
         }
 
-        public async Task<List<User>> GetRandomUsersAsync(int count, Gender gender = Gender.Both, List<Nationality> natioanlitites = null, bool useLegoImages = false, string seed = null)
+        public async Task<List<User>> GetRandomUsersAsync(int count = 1, Gender gender = Gender.Both, List<Nationality> natioanlitites = null, bool useLegoImages = false, string seed = null)
         {
             var options = new RequestOptions { Count = count, Gender = gender, Seed = seed, UseLegoImages = useLegoImages, Nationalities = natioanlitites };
             return await GetRandomUsersAsync(options).ContinueWith(r => r.Result);
         }
-        
+
         private async Task<List<User>> GetRandomUsersAsync(RequestOptions options)
         {
             var parameters = $"/?{options}";
