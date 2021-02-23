@@ -14,7 +14,7 @@ namespace RandomUserSharp.Models
         public string State { get; set; }
 
         [JsonProperty("street")]
-        public string Street { get; set; }
+        public Street Street { get; set; }
 
         [JsonProperty("coordinates")]
         public Coordinates Coordinates { get; set; }
