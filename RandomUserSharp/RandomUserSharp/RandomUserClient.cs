@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -8,7 +8,7 @@ using RandomUserSharp.Utils;
 
 namespace RandomUserSharp
 {
-    public class RandomUserClient : IDisposable
+    public class RandomUserClient : IDisposable, IRandomUserClient
     {
         private readonly HttpClient _httpClient;
 
